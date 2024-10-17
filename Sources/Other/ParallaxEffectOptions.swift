@@ -9,6 +9,7 @@
 import UIKit
 
 /// A type that allows to customize parallax effect
+@MainActor
 public struct ParallaxEffectOptions {
     
     /// A property to allow customize parallax effect (pan, angles, etc.)
@@ -52,7 +53,7 @@ public struct ParallaxEffectOptions {
 }
 
 extension ParallaxEffectOptions {
-
+    @MainActor
     public struct GlowPosition {
         let layout: (UIView, UIImageView) -> Void
 

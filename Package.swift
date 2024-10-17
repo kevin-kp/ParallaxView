@@ -1,11 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:6.0
 
 import PackageDescription
 
 let package = Package(
     name: "ParallaxView",
     platforms: [
-        .tvOS(.v9),
+        .tvOS(.v12),
     ],
     products: [
         .library(

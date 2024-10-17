@@ -9,6 +9,7 @@
 import UIKit
 
 /// Actions for a parallax view
+@MainActor
 open class ParallaxViewActions<T: UIView> where T: ParallaxableView {
 
     /// Closure will be called in animation block by ParallaxableView when view should change its appearance to the focused state

@@ -8,7 +8,8 @@
 import UIKit
 
 /// A type that can have parallax view representation
-public protocol ParallaxableView: class {
+@MainActor
+public protocol ParallaxableView: AnyObject {
     /// Parallax effects options
     var parallaxEffectOptions: ParallaxEffectOptions { get set }
     /// The radius to use when
