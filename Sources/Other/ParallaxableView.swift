@@ -9,9 +9,13 @@ import UIKit
 
 /// A type that can have parallax view representation
 @MainActor
-public protocol ParallaxableView: AnyObject {
+public protocol ParallaxableView<T>: UIView {
+    associatedtype T: ParallaxableView
+    
     /// Parallax effects options
     var parallaxEffectOptions: ParallaxEffectOptions { get set }
+    /// Parallax actions
+    var parallaxViewActions: ParallaxViewActions<T> { get set }
     /// The radius to use when
     var cornerRadius: CGFloat { get set }
 }
