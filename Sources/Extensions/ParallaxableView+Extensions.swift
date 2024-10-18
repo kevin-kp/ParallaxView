@@ -81,7 +81,7 @@ open class ParallaxViewActions<T: UIView> where T: ParallaxableView {
                     UIView.animate(
                         withDuration: 0.12,
                         animations: {
-                            view.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+                            view.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
                         }
                     )
                 }
